@@ -1,0 +1,51 @@
+/* css-light-reset */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+
+}
+
+/* UTILS */
+.d-flex{
+    display: flex;
+}
+
+body{
+    height: 100vh;
+}
+main{
+    height: 90vh;
+    width: 100vw;
+    background-color: brown;
+}
+
+#sidebar{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+}
+#content{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: aqua;
+}
+@media screen and {
+    
+}
+@media screen and {
+    
+}
+@media screen and {
+    
+}
