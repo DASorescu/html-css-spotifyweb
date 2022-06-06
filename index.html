@@ -11,40 +11,62 @@
     </head>
     <body>
         <main class="d-flex"> 
-            <div id="sidebar" class="d-flex p-hfrem">
-                <div class="logo p-hfrem mb-hfrem">
-                    <figure class="big-logo">
-                        <img src="img/logo.svg" alt="spotify-logo">
-                    </figure>
-                    <figure class="small-logo">
-                        <img src="img/logo-small.svg" alt="lg">
-                    </figure>
-                </div>
-                <div class="navigation p-hfrem mb-hfrem">
-                    <nav class="d-flex">
-                        <div class="icons d-flex">
-                            <i class="fa-solid fa-house "></i>
-                            <i class="fa-solid fa-magnifying-glass "></i>
-                            <i class="fa-solid fa-lines-leaning mirror"></i>
-                        </div>
+            <div id="sidebar" class="d-flex p-1rem">
+                <div class="wrapper">
+                    <div class="logo mb-hfrem">
+                        <figure class="big-logo">
+                            <img src="img/logo.svg" alt="spotify-logo">
+                        </figure>
+                        <figure class="small-logo">
+                            <img src="img/logo-small.svg" alt="lg">
+                        </figure>
+                    </div>
+                    <div class="navigation  mb-hfrem">
+                        <nav class="d-flex">
+                            <div class="icons d-flex">
+                                <img src="img/home.svg" alt="hme">
+                                <img src="img/search.svg" alt="src">
+                                <img src="img/libreria.svg" alt="lyb">
+                            </div>
+                            <ul class="ml-hfrem">
+                                <li>Home</li>
+                                <li>Cerca</li>
+                                <li>La tua libreria</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="playlists">
                         <ul>
-                            <li>Home</li>
-                            <li>Cerca</li>
-                            <li>La tua libreria</li>
+                            <li><h3>Playlist</h3></li>
+                            <li>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-square-plus fa-2x"></i>
+                                    <span class="ml-hfrem">Crea Playlist</span>
+                                </div>
+                            </li>
+                            <li>Nuova Playlist</li>
+                            <li>Nuova Playlist</li>
+                            <li>Nuova Playlist</li>
+                            <li>Nuova Playlist</li>
+                            <li>Nuova Playlist</li>
+                            <li>Nuova Playlist</li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-                <div class="playlists p-hfrem">
-                    <ul>
-                        <li><h3>Playlist</h3></li>
-                        <li><i class="fa-solid fa-square-plus fa-2x"></i><span>Crea Playlist</span></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div class="user-name">
+                    <div class="d-flex ai-center mb-hfrem">
+                            <img src="img/download.svg" alt="dw">
+                            <span class="ml-hfrem">Installa app</span>
+                    </div>
+                    <hr class="mb-hfrem">
+                    <div class="d-flex ai-center ">
+                        <figure class="pfl-picture">
+                            <img src="img/profile.svg" alt="pfl">
+                        </figure>
+                        <span class="ml-hfrem">Jhon Doe</span>
+                    </div>
                 </div>
-                <div></div>
+
             </div>
             <div id="content" class="text-center">
                 <header id="content-header"></header>
