@@ -3,49 +3,139 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 
 :root{
-
+    /* COLORS */
+    --txt-gray: #a3a3a3;
+    --drk-blue: #141922;
+    --drk-gray: #282828;
+    --lime: #B0FA30;
 }
 
 /* UTILS */
 .d-flex{
     display: flex;
 }
+.text-center{
+    text-align: center;
+}
+.p-hfrem{
+    padding:0.5rem;
+}
+.p-1{
+    padding: 1rem ;
+}
+.mb-hfrem{
+    margin-bottom: 0.5rem;
+}
+.mirror{
+    display: inline-block; 
+    font-size: 30px;
 
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+/* CODE-CORE */
 body{
     height: 100vh;
 }
 main{
-    height: 90vh;
+    height: calc(100% - 100px);
     width: 100vw;
+    /* TODOREMOVE */
     background-color: brown;
 }
 
 #sidebar{
-    width: 300px;
-    height: 100%;
+    flex-basis: 230px;
+    flex-shrink: 0;
+    flex-direction: column;
+    /* TODOREMOVE */
+    color: #fff;
     background-color: black;
+}
+#sidebar .navigation{
+    line-height: 2rem;
+}
+
+#sidebar .icons{
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+#sidebar ul{
+    margin-left: 0.5rem;
+}
+
+.logo{
+    width: 65%;
+}
+#sidebar .small-logo{
+    display: none;
+}
+
+.playlists ul{
+    line-height: 2rem;
+
+}
+.playlist li{
+    
 }
 #content{
     width: 100%;
-    height: 100%;
+   
+    overflow-y: auto;
+
+}
+#content-header{
+    height: 80px;
+    position: sticky;
+    top: 0%;
+    
+    /* todoremove */
+    background-color: cornflowerblue;
 }
 
 footer{
-    height: 10vh;
+    height: 100px;
     width: 100vw;
+    /* TODOREMOVE */
     background-color: aqua;
 }
-@media screen and {
+
+@media screen and (max-width: 552px){
+    #sidebar{
+        flex-basis: 40px;
+    }
+    #sidebar ul{
+        display: none;
+    }
+    #sidebar .big-logo{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+    }
+    #sidebar .small-logo{
+        display: block;
+    }
+    #sidebar .icons{
+        height: 100px;
+    }
+}
+/* @media screen and {
     
 }
 @media screen and {
     
-}
-@media screen and {
-    
-}
+} */

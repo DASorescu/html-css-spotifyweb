@@ -6,14 +6,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
         <title>Document</title>
     </head>
     <body>
         <main class="d-flex"> 
-            <div id="sidebar"></div>
-            <div id="content"></div>
+            <div id="sidebar" class="d-flex p-hfrem">
+                <div class="logo p-hfrem mb-hfrem">
+                    <figure class="big-logo">
+                        <img src="img/logo.svg" alt="spotify-logo">
+                    </figure>
+                    <figure class="small-logo">
+                        <img src="img/logo-small.svg" alt="lg">
+                    </figure>
+                </div>
+                <div class="navigation p-hfrem mb-hfrem">
+                    <nav class="d-flex">
+                        <div class="icons d-flex">
+                            <i class="fa-solid fa-house "></i>
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                            <i class="fa-solid fa-lines-leaning mirror"></i>
+                        </div>
+                        <ul>
+                            <li>Home</li>
+                            <li>Cerca</li>
+                            <li>La tua libreria</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="playlists p-hfrem">
+                    <ul>
+                        <li><h3>Playlist</h3></li>
+                        <li><i class="fa-solid fa-square-plus fa-2x"></i><span>Crea Playlist</span></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div></div>
+            </div>
+            <div id="content" class="text-center">
+                <header id="content-header"></header>
+                
+            </div>
         </main>
-        <footer></footer>
+        <footer class="text-center"> </footer>
     </body>
 </html>
         
