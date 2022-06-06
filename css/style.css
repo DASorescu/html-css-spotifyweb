@@ -50,10 +50,10 @@ body{
     height: 100vh;
 }
 main{
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     width: 100vw;
-    /* TODOREMOVE */
-    background-color: brown;
+    
+    background-color: var(--drk-blue);
 }
 
 #sidebar{
@@ -128,15 +128,16 @@ main{
     position: sticky;
     top: 0%;
     
-    /* todoremove */
-    background-color: cornflowerblue;
+    
+    background-color: #000;
+    opacity: 0.4;
 }
 
 footer{
-    height: 100px;
+    height: 80px;
     width: 100vw;
-    /* TODOREMOVE */
-    background-color: aqua;
+    
+    background-color: var(--drk-gray);
 }
 
 @media screen and (max-width: 552px){
@@ -158,6 +159,13 @@ footer{
     #sidebar .icons{
         flex-basis: 25px;
         height: 100px;
+    }
+    .user-name span , .user-name hr {
+        display: none;
+    }
+    .user-name .dw-icon{
+        width: 100%;
+        height: 15px;
     }
 }
 /* @media screen and {
