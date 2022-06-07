@@ -57,6 +57,10 @@
 .font-1{
     font-size: 12px;
 }
+
+.p-relative{
+    position: relative;
+}
 /* !GENERIC */
 ul{
     margin-left: 0%;
@@ -235,7 +239,10 @@ main{
 
 #recently-played li article{
     padding: 1rem;
+   
 }
+
+
 
 
 /* ?SECTION FOR YOU */
@@ -365,6 +372,35 @@ footer .player-image{
 }
 /* HOVER-EFFECTS */
 
+#recently-played article{
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+#recently-played article:hover figure{
+
+    transform: translateY(-10px) scale(1.05);
+}
+
+#recently-played article:hover figure::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+#recently-played article:hover figure::after{
+    content: '\f144';
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2rem;
+    font: var(--fa-font-regular);
+}
 
 /* # BREAKPOINT 552PX */
 @media screen and (max-width: 552px){
