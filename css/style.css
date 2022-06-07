@@ -374,9 +374,11 @@ footer .player-image{
 
 #recently-played article{
     cursor: pointer;
-    transition: transform 2s;
+    
 }
-
+#recently-played figure{
+    transition: transform 0.5s;
+}
 #recently-played article:hover figure{
 
     transform: translateY(-10px) scale(1.05);
@@ -394,12 +396,16 @@ footer .player-image{
 #recently-played article:hover figure::after{
     content: '\f144';
     position: absolute;
+    
+   
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%);
+    
     color: #fff;
-    font-size: 2rem;
+    
     font: var(--fa-font-regular);
+    font-size: 32px;
 }
 
 /* # BREAKPOINT 552PX */
