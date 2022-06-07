@@ -145,6 +145,12 @@ main{
     line-height: 2rem;
 
 }
+
+.playlists .new-pl{
+    max-height: 30vh;
+    overflow-y: auto;
+}
+
 .user-name img{
     width:15px;
 }
