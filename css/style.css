@@ -272,16 +272,18 @@ footer{
     justify-content: space-between;
    
 }
-footer > div {
+footer .player-info {
+    padding: 1rem;
     flex-basis: calc(100% / 3);
 }
-/* footer img {
-    max-height: 100%;
-} */
-/* footer figure{
-    height: 100%;
-} */
 
+footer .player-image{
+    height: 100%;
+}
+.player-image img{
+    display: block;
+    max-height: 100%;
+}
 /* HOVER-EFFECTS */
 
 
