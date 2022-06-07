@@ -27,7 +27,7 @@
                     <div class="navigation  mb-hfrem">
                         <nav class="d-flex">
                             <div class="icons d-flex">
-                                <img src="img/home.svg" alt="hme"class="bl active">
+                                <img src="img/home.svg" alt="hme">
                                 <img src="img/search.svg" alt="src">
                                 <img src="img/libreria.svg" alt="lyb">
                             </div>
@@ -83,7 +83,10 @@
                 </header>
                 <div class="content-nav">
                         <ul class="d-flex ai-center">
-                            <li class="bb active"><a href="#">In Evidenza</a></li>
+                            <li class="d-flex d-column ai-center"> 
+                                <a href="#">In Evidenza</a>
+                                <div class="active"></div>
+                            </li>
                             <li><a href="#">Podcast</a></li>
                             <li><a href="#">Classifiche</a></li>
                             <li><a href="#">Generi e Mood</a></li>
@@ -102,7 +105,7 @@
                                         <img src="img/metal_lifting.jpg" alt="metallica">
                                     </figure>
                                     <h4 class="mb-hfrem">Havy Metal</h4>
-                                    <address class="mb-hfrem txt-gray">Subtitle</address>
+                                    <address class="mb-hfrem txt-gray font-1">Subtitle</address>
                                 </article>
                             </li>
                             <li>
@@ -111,7 +114,7 @@
                                         <img src="img/stranger.jpeg" alt="stranger">
                                     </figure>
                                     <h4 class="mb-hfrem">Stranger Things,Vol.1 (a Netflix Original Series Soundtrack)</h4>
-                                    <address class="mb-hfrem txt-gray">Kyle Dixon & Michael Stein</address>
+                                    <address class="mb-hfrem txt-gray font-1">Kyle Dixon & Michael Stein</address>
                                 </article>
                             </li>
                             <li>
@@ -120,7 +123,7 @@
                                         <img src="img/aquietplace.jpeg" alt="quiet">
                                     </figure>
                                     <h4 class="mb-hfrem">A quiet place</h4>
-                                    <address class="mb-hfrem txt-gray">Subtitle</address>
+                                    <address class="mb-hfrem txt-gray font-1">Subtitle</address>
                                 </article>
                             </li>
                             <li>
@@ -129,7 +132,7 @@
                                         <img src="img/split.jpeg" alt="split">
                                     </figure>
                                     <h4 class="mb-hfrem">Split</h4>
-                                    <address class="mb-hfrem txt-gray">Subtitle</address>
+                                    <address class="mb-hfrem txt-gray font-1">Subtitle</address>
                                 </article>
                             </li>
                             <li>
@@ -138,7 +141,7 @@
                                         <img src="img/cure.jpeg" alt="cure">
                                     </figure>
                                     <h4 class="mb-hfrem">A cure for wellness</h4>
-                                    <address class="mb-hfrem txt-gray">Subtitle</address>
+                                    <address class="mb-hfrem txt-gray font-1">Subtitle</address>
                                 </article>
                             </li>
                             <li>
@@ -147,7 +150,7 @@
                                         <img src="img/sinister.jpeg" alt="sinister">
                                     </figure>
                                     <h4 class="mb-hfrem">Sinister</h4>
-                                    <address class="mb-hfrem txt-gray">Subtitle</address>
+                                    <address class="mb-hfrem txt-gray font-1">Subtitle</address>
                                 </article>
                             </li>
                         </ul>
@@ -176,8 +179,8 @@
                     </section>
                     <!-- MOST POPULAR -->
                     <section id="mostpopular" class="txt-wht">
-                        <h2 class="mb-2">Artisti Pi&ugrave; popolari</h2>
-                        <span class="txt-gray">Pi&ugrave; ascolti ,pi&ugrave; accurati saranno i suggerimenti</span><br>
+                        <h2 class="mb-hfrem">Artisti Pi&ugrave; popolari</h2>
+                        <span class="txt-gray font-1">Pi&ugrave; ascolti ,pi&ugrave; accurati saranno i suggerimenti</span><br>
                         <div class="d-flex wrapper">
                             <div class="col">
                                 <div class="card">
@@ -202,13 +205,44 @@
         </main>
         <!-- FOOTER -->
         <footer class="d-flex">
-            <div class="d-flex player-info">
+            <div class="d-flex player-info ai-center">
                 <figure class="player-image">
                     <img src="img/sinister.jpeg" alt="sinister">
                 </figure>
+                <div class="song-info ml-hfrem">
+                    <h4 class="song-title txt-wht">Sinister</h4>
+                    <span class="song-description txt-gray font-1">Brano nome</span>
+                </div>
+                <div class="simbols txt-gray d-flex">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
-            <div></div>
-            <div></div>
+            <!-- player console -->
+            <div class="d-flex d-column player-console ai-center">
+                <div class="player-controls d-flex ai-center">
+                    <i class="fa-solid fa-shuffle txt-wht"></i>
+                    <i class="fa-solid fa-backward-step txt-wht"></i>
+                    <i class="fa-regular fa-circle-play txt-wht play-key"></i>
+                    <i class="fa-solid fa-forward-step txt-wht"></i>
+                    <i class="fa-solid fa-arrow-rotate-right txt-wht"></i>
+                </div>
+                <div class="d-flex player-progress">
+                    <div class="time-passed txt-wht">0:25</div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="total-time txt-wht">4:35</div>
+                </div>
+            </div>
+            <div class="d-flex txt-wht ai-center player-volume-controll">
+                <i class="fa-solid fa-list-ul ml-hfrem"></i>
+                <i class="fa-solid fa-display ml-hfrem"></i>
+                <i class="fa-solid fa-volume-high ml-hfrem"></i>
+                <div class="volume ml-hfrem">
+                    <div class="volume-level "></div>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
@@ -216,3 +250,5 @@
 
                             
                             
+
+

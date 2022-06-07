@@ -22,10 +22,15 @@
 .d-flex{
     display: flex;
 }
+.d-column{
+    flex-direction: column;
+}
 .text-center{
     text-align: center;
 }
-
+.p-hfrem{
+    padding: 0.5rem;
+}
 .p-1rem{
     padding: 1rem ;
 }
@@ -47,6 +52,10 @@
 }
 .txt-gray{
     color: var(--txt-gray);
+}
+
+.font-1{
+    font-size: 12px;
 }
 /* !GENERIC */
 ul{
@@ -78,15 +87,17 @@ img{
 
 address{
     font-style: normal;
-    font-size: 12px;
 }
 
-.bb.active{
-    border-bottom: 2px solid var(--lime);
+.active{
+    height: 2px;
+    width: 30px;
+    background-color: var(--lime);
 }
 .bl.active{
     border-left: 2px solid var(--lime);
 }
+
 /* ?CODE-CORE */
 body{
     height: 100vh;
@@ -278,17 +289,79 @@ footer{
     justify-content: space-between;
    
 }
+
+/* IMAGE AND SONGS INFO */
 footer .player-info {
     padding: 1rem;
     flex-basis: calc(100% / 3);
 }
 
 footer .player-image{
-    height: 100%;
+    height: 50px;
+    width: 50px;
 }
 .player-image img{
     display: block;
     max-height: 100%;
+}
+
+.player-info .simbols{
+    flex-basis: 30%;
+    justify-content: space-evenly;
+}
+/* CONSOLE AND TIMING */
+.player-console{
+    flex-basis: 50%;
+}
+.player-controls{
+    padding: 0.5rem;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.player-controls .play-key{
+    font-size: 25px;
+}
+
+.time-passed{
+    flex-basis: 10%;
+}
+.progress-bar{
+    flex-basis: 70%;
+    height: 3px;
+
+    background-color: var(--txt-gray);
+}
+.progress{
+    width: 20%;
+    height: 3px;
+
+    background-color: #fff;
+}
+.total-time{
+    flex-basis: 10%;
+}
+
+.player-progress{
+
+    width: 90%;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+/* PLAYER VOLUME */
+.player-volume-controll{
+    flex-basis: calc(100% / 3);
+}
+.volume{
+    width: 50%;
+    height: 3px;
+    background-color: var(--txt-gray);
+}
+.volume-level{
+    width: 70%;
+    height: 3px;
+    background-color: #fff;
 }
 /* HOVER-EFFECTS */
 
@@ -340,6 +413,15 @@ footer .player-image{
         flex-basis: 50%;
         
     
+    }
+
+    .player-controls{
+        width: 50%;
+    }
+    .player-info .simbols{
+        height: 100%;
+       flex-direction: column;
+       align-items: center;
     }
 
     #foryou{
