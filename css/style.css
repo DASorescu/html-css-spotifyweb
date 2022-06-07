@@ -18,7 +18,7 @@
     --lime: #B0FA30;
 }
 
-/* UTILS */
+/* !UTILS */
 .d-flex{
     display: flex;
 }
@@ -31,21 +31,63 @@
 }
 .ml-hfrem{
     margin-left: 0.5rem;
-}
+} 
 .mb-hfrem{
     margin-bottom: 0.5rem;
+}
+.mb-2{
+    margin-bottom: 1.5rem;
 }
 .ai-center{
     align-items: center;
 }
 
-/* GENERIC */
+.txt-wht{
+    color: #fff;
+}
+.txt-gray{
+    color: var(--txt-gray);
+}
+/* !GENERIC */
 ul{
     margin-left: 0%;
 }
+a{
+    text-decoration: none;
+    color: var(--txt-gray);
+}
 
+.btn{
+    color: #fff;
+    font-size: 10px;
 
-/* CODE-CORE */
+    border: 1px solid #fff;
+    border-radius: 25px;
+
+    height: 40px;
+    width: 150px;
+    margin-right: 2rem;
+
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: middle;
+}
+img{
+    width: 100%;
+}
+
+address{
+    font-style: normal;
+    font-size: 12px;
+}
+
+.bb.active{
+    border-bottom: 2px solid var(--lime);
+}
+.bl.active{
+    border-left: 2px solid var(--lime);
+}
+/* ?CODE-CORE */
 body{
     height: 100vh;
 }
@@ -55,7 +97,7 @@ main{
     
     background-color: var(--drk-blue);
 }
-
+/* ?SIDEBAR-SECTION*/
 #sidebar{
     flex-basis: 230px;
     flex-shrink: 0;
@@ -65,10 +107,13 @@ main{
     background-color: black;
 
     padding-bottom: 0%;
-
+    
 }
 #sidebar .wrapper{
     height: calc(100% - 75px);
+
+    overflow-y: hidden;
+    
 }
 #sidebar .user-name{
     height: 75px;
@@ -85,6 +130,7 @@ main{
 }
 
 #sidebar .small-logo{
+    width: 100%;
     display: none;
 }
 
@@ -92,6 +138,9 @@ main{
     width: 65%;
 }
 
+.playlists .playlist-head{
+    line-height: 30px;
+}
 .playlists ul{
     line-height: 2rem;
 
@@ -117,13 +166,16 @@ main{
 
 
 }
+/* ?CONTENT-SECTION */
 #content{
     width: 100%;
    
     overflow-y: auto;
 
 }
-#content-header{
+
+/* ?CONTENT-HEADER */
+.content-header{
     height: 80px;
     position: sticky;
     top: 0%;
@@ -131,15 +183,109 @@ main{
     
     background-color: #000;
     opacity: 0.4;
+
+    justify-content: flex-end;
+    
 }
 
+/* ?CONTENT-NAV */
+.content-nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-nav li{
+    padding: 1rem;
+
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+/* ?CONTENT SECTION RECENTLY-PLAYED */
+#recently-played{
+    padding: 2rem 1rem;
+}
+#recently-played ul{
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+#recently-played li{
+    flex-basis: calc(100% / 6);
+    
+
+}
+
+#recently-played li article{
+    padding: 1rem;
+}
+
+
+/* ?SECTION FOR YOU */
+#foryou{
+    width: calc(100% / 3);
+    padding: 2rem 1rem;
+}
+
+#foryou .col{
+    flex-basis: 50%;
+    
+}
+
+#foryou .card{
+    padding: 1rem;
+}
+
+#foryou .wrapper{
+    margin: 0 -1rem;
+}
+
+/*  ?MOST POPULAR*/
+#mostpopular{
+    width: calc(100% / 3);
+    padding: 2rem 1rem;
+}
+
+#mostpopular .col{
+    flex-basis: 50%;
+    
+}
+
+#mostpopular .card{
+    padding: 1rem;
+}
+
+#mostpopular .wrapper{
+    margin: 0 -1rem;
+}
+#mostpopular img{
+    border-radius: 50%;
+}
+
+/* ?Footer */
 footer{
     height: 80px;
     width: 100vw;
     
     background-color: var(--drk-gray);
-}
 
+    justify-content: space-between;
+   
+}
+footer > div {
+    flex-basis: calc(100% / 3);
+}
+/* footer img {
+    max-height: 100%;
+} */
+/* footer figure{
+    height: 100%;
+} */
+
+/* HOVER-EFFECTS */
+
+
+/* # BREAKPOINT 552PX */
 @media screen and (max-width: 552px){
     #sidebar{
         flex-basis: 60px;
@@ -148,6 +294,9 @@ footer{
         display: none;
     }
     #sidebar .big-logo{
+        display: none;
+    }
+    #sidebar .playlists{
         display: none;
     }
     .logo{
@@ -168,9 +317,29 @@ footer{
         height: 15px;
     }
 }
-/* @media screen and {
+
+/* # BREAKPOINT 878PX */
+@media screen and (max-width: 878px){
+    #recently-played li{
+        flex-basis: calc(100% / 4);
+        
     
+    }
 }
-@media screen and {
+/* # BREAKPOINT 639PX */
+@media screen and (max-width: 639px){
+    #recently-played li{
+        flex-basis: 50%;
+        
     
-} */
+    }
+
+    #foryou{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    #mostpopular{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
